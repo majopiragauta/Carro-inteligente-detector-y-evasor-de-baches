@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BacheBot | Carro inteligente que esquiva baches</title>
+<style>
+:root{--navy:#173b63;--blue:#2e74b5;--cyan:#dff3f8;--ink:#243447}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:var(--ink);line-height:1.6}
+header{background:linear-gradient(135deg,#102b48,var(--blue));color:white;text-align:center;padding:72px 8%}
+header h1{font-size:clamp(2.4rem,6vw,4.5rem);margin:0}header p{max-width:760px;margin:16px auto;font-size:1.15rem}
+main{max-width:1000px;margin:auto;padding:25px 22px}section{padding:28px 0;border-bottom:1px solid #dce5ee}
+h2{color:var(--navy)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.card{background:var(--cyan);padding:18px;border-radius:12px}.team{background:#f5f8fb;padding:22px;border-radius:12px}
+footer{background:var(--navy);color:white;text-align:center;padding:22px}
+</style></head><body>
+<header><h1>BacheBot</h1><p>Un carro inteligente que detecta irregularidades simuladas en una pista y cambia su trayectoria para esquivarlas.</p></header>
+<main>
+<section><h2>El problema</h2><p>Los baches y desniveles pueden afectar los desplazamientos y los vehículos. BacheBot explora una alternativa tecnológica a pequeña escala: detectar zonas irregulares en una pista de pruebas y evitar pasar sobre ellas.</p></section>
+<section><h2>Nuestra solución: ¿cómo funciona?</h2><p>El prototipo combina sensores de distancia y superficie con un controlador programable. Los sensores miden el entorno, el controlador analiza los datos y decide si el carro puede continuar o debe detenerse y girar.</p>
+<div class="grid"><div class="card"><strong>1. Detectar</strong><p>Los sensores revisan el suelo y el espacio frente al vehículo.</p></div><div class="card"><strong>2. Analizar</strong><p>El controlador compara las mediciones con valores de referencia.</p></div><div class="card"><strong>3. Decidir</strong><p>El sistema determina si la ruta está libre o si debe evitar una zona.</p></div><div class="card"><strong>4. Esquivar</strong><p>Los motores ejecutan el giro hacia una ruta alternativa.</p></div></div>
+<p><em>La IA puede incorporarse en una etapa posterior para clasificar los datos de las pruebas. El prototipo se utiliza únicamente en una pista controlada.</em></p></section>
+<section><h2>Impacto esperado</h2><ul><li>Demostrar el uso de sensores para reconocer irregularidades.</li><li>Integrar electrónica, programación e Inteligencia Artificial.</li><li>Explorar estrategias autónomas para evitar zonas irregulares.</li><li>Servir como base para futuros sistemas de monitoreo vial.</li></ul></section>
+<section><h2>Abstract</h2><p>Road surface defects such as potholes can affect vehicle comfort, mobility, and maintenance costs. This project presents BacheBot, a small autonomous vehicle prototype designed to identify simulated potholes and obstacles on a controlled test track and change its path to avoid them. The proposed system combines distance and surface sensors with a programmable controller, such as an Arduino or ESP32. Sensors collect measurements from the area in front of and beneath the vehicle. The controller processes these measurements and compares them with reference values to identify possible irregularities. When the track is considered clear, the vehicle continues moving; when a potential hazard is detected, the system slows down or stops and selects an alternative direction. Three technological approaches are considered: a vehicle using a front ultrasonic sensor, a vehicle equipped with downward-facing surface sensors, and a sensor-based prototype enhanced with an artificial intelligence model. The selected development strategy begins with a low-cost sensor-based version and allows AI-based classification to be added after collecting and labeling test data. The prototype is intended for educational experiments on a controlled track and is not designed for public-road use. Expected outcomes include demonstrating autonomous obstacle avoidance, integrating basic electronics and programming, and creating a foundation for future road-condition monitoring systems. Further testing should measure detection reliability, turning performance, battery duration, and the system’s ability to distinguish simulated potholes from ordinary surface variations.</p></section>
+<section class="team"><h2>Equipo desarrollador</h2><p><strong>Sara Fernanda Alarcón Pulido</strong><br><strong>María José Piragauta</strong><br>Programa: Introducción a la IA<br>Universidad Sergio Arboleda · 2026</p></section>
+</main><footer>Proyecto académico BacheBot · 2026</footer></body></html>
